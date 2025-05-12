@@ -1,137 +1,30 @@
-<html>
-
-<head>
-
-<title>Ejemplo de fondo</title>
-
-
-<style>
-
-.navbar {
-
-  display: flex;
-
-  justify-content: space-around;
-
-  background-color: black;
-
-}
-
-.navbar a {
-
-  color: BLUE;
-
-  text-decoration: none;
-
-  padding: 10px;
-
-}
-
-
-
-.card-container {
-
-    display: flex;
-
-    gap: 20px;
-
-    justify-content: center;
-
-}
-
-
-.card {
-
-    width: 200px;
-
-    padding: 20px;
-
-    border: 1px solid #ccc;
-
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-
-    border-radius: 10px;
-
-    background-color: #ff0;
-
-} 
-
-</style>
-
-
-</head>
-
-<body>  
-
-
-<nav class="navbar">
-
-  	<a href="https://www.canva.com/design/DAGGYejZfqo/NJip00j7W7Z2TeLOzribBw/edit">Home</a>
-
-  	<a href="#">About</a>
-
-  	<a href="#">Services</a>
-
-  	<a href="#">Contact</a>
-
-</nav>
-
-  
-
-<div class="card-container">
-
-    <div class="card"> Border collieg:
-
-<p>El Border Collie ocupa el primer lugar entre los perros más inteligentes del mundo. Aunque su origen es incierto, se cree que proviene de las islas británicas donde solía ser un perro pastor. Esta raza de perros destaca por su capacidad de aprendizaje, agilidad y su gran forma física; ideal para el entorno rural. Sus ejemplares son fieles, obedientes y ordenados.</p>
-
-<img src="data:image/jpeg;base64,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">
-</div>
-    <div class="card"> Caniche o poodle:
-
-	<p>El poodle se reconoce por su elegancia, gran presencia e inteligencia. Existen una gran gama de variedades que se diferencian, principalmente, por su tamaño. Es una raza de perros vivaz, fiel y juguetona: sus ejemplares aprenden con mucha facilidad. Los caniches de razas medianas a pequeña son animales de compañía ideales para las familias que tienen perros por primera vez. </p>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWXj3fVn37I8dsP7pJD72dhgZMiXDv768cng&s">
-  		
-</div>
-
-
-    <div class="card">Pastor alemán:
-<p>  Desde sus orígenes, ha destacado por su nobleza, obediencia e inteligencia. Es una raza de perros fácil de entrenar. Es por ello que el pastor alemán suele formar parte de los cuerpos policiales y actividades de búsqueda o rescate de personas. También destaca en los deportes caninos, como lazarillo y entre los perros de terapia. Es el perro de compañía por excelencia.</p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToYITLollIJm258V7kGnXNuQcyTcuaVCd1Fg&s">
-</div>
-
-    <div class="card"> Golden retriever:
-
-<p>Es una raza de origen escocés reconocida por sus habilidades para la caza, su gran temperamento, sociabilidad, gentileza e inteligencia. También destaca como perro de terapia, en labores policiales y de rescate. El hermoso color de su pelaje puede variar desde un dorado hasta un crema suave. </p>
-
-<img src="https://media.istockphoto.com/id/182781924/es/foto/feliz-golden-retriever-cachorro-situadas-en-el-piso-de-madera-dura.jpg?s=612x612&w=0&k=20&c=O5i3ElZy-FG_TWIOpovrlibzISWUsDj3UncAOIbPhac="  width="70%" height="30%" >
-
-</div>
-
-
-    <div class="card">Dóberman pinscher
-
-<p>Destaca entre las razas de perros de defensa y protección. Se caracteriza por ser un perro musculoso y poderoso, con mucha fortaleza. Su pelaje es corto, duro y denso. Además, es un perro fácil de entrenar, amistoso, sensible, inteligente y pacífico; aunque desconfía de los extraños. </P>
-
-<img src="">
-
-</div>
-  
-
-  <div class="card">Pastor de Shetland
-<p>Es un perro pequeño de gran hermosura y elegancia, parecido al border collie de pelo largo. Se trata de una raza trabajadora e infatigable, gracias a sus orígenes como pastores. Se caracteriza por su robustez, fuerza e inteligencia. Además, es leal y muy cariñoso por lo que se ha adaptado con mucha facilidad como perro de compañía.</p>
-</div>
-
-<div class="card">Labrador retriever
-
-<p>El labrador tiene su origen en Terranova, Canadá. Es una raza de perros fuertes, resistentes y muy trabajadora. Son perros sociables, amigables, inteligentes y muy divertidos. Se adaptan fácilmente a las normas y tareas del hogar, por lo que sirven como perros de compañía o para niños.</P>
-
-<img src="">
-
-</div>
-
-
-
-</body>
-
-</html>
+Nombre:<input type="text" name="nombre" size="30" maxlength="40" />
+apellido:<input type="text" apellido="nombre" size="30" maxlength<="40" />
+<br>
+Edad:<input type="text" name="nombre"3 size="30" maxlength="40" />
+
+<br>
+sexo: 
+ <br> mujer <input type="radio" name="correo" value="mujer" checked="checked" /
+<br> 
+Hombre<input type="radio" name="correo" value="HOMBRE" />
+<br>Nivel de Estudio:
+<select name="Bchillerato">
+  <option
+ value="rojo">sexto</option>
+<option value="verde" selected="selected">septimo</option>
+<option value="verde" selected="selected">octavo</option>
+<option value="verde" selected="selected">Noveno</option>
+<option value="verde" selected="selected">Decimo</option>
+<option value="verde" selected="selected">once</option>
+</select>
+<br>
+Usuario:<input type="text" apellido="nombre" size="30" maxlength<="40" />
+<br>
+Contraseña:
+  <input type="password" name="nombre" size="30" maxlength="40" />
+<br>
+confirmacion de contraseña:
+<input type="password" name="nombre" size="10" maxlength="40" />
+<br>
+ <input type="submit" name="envio" value="Enviar" 
