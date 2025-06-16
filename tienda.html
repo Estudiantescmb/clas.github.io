@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Carrito de Compras Simulado</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial;
+
+      max-width: 600px;
+
+      margin: auto;
+
+    }
+
+    .producto {
+
+      border: 1px solid #ccc;
+
+      padding: 10px;
+
+      margin: 10px 0;
+
+    }
+
+    #carrito {
+
+      background: #f9f9f9;
+
+      border: 2px dashed #ccc;
+
+      padding: 10px;
+
+      margin-top: 20px;
+
+    }
+
+    .btn {
+
+      padding: 5px 10px;
+
+      cursor: pointer;
+
+      background-color: #28a745;
+
+      color: white;
+
+      border: none;
+
+      margin-top: 5px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <h1>carros deportivos </h1>
+
+  <p>Haz clic en "Agregar al carrito" para ver cómo se simula una compra.</p>
+
+
+  <div class="producto">
+
+    <h3>Bugatti Chiron</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/FoS20162016_0624_132444AA_%2827785299372%29.jpg/150px-FoS20162016_0624_132444AA_%2827785299372%29.jpg">
+    <p>Precio: 1.300.000.000</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Zapatos deportivos', 120000)">Agregar al carrito</button>
+
+  </div>
+
+
+  <div class="producto">
+
+    <h3>Ferrari SF90 Stradale</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWegFBKgFipEnvGPDsVyQwVWjYB9Qj3XuMg&s">
+    <p>Precio: $90.654.867</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Camiseta básica', 35000)">Agregar al carrito</button>
+
+  </div>
+
+
+  <div class="producto">
+
+    <h3>Lamborghini Aventador</h3>
+<img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/aventador/2023/02_09_refresh/aven_gate_s_02_m.jpg" width="300" height="200"">
+    <p>Precio: $355.543.453</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+
+<div class="producto">
+
+    <h3>Porsche 911</h3>
+<img src="https://images-porsche.imgix.net/-/media/5D0BB7E042BD4C9DBEF84B5E70482520_73AA748306934B0C9CE20E32231DFCE2_CZ25W01IX0011911-carrera-front?w=999&q=85&auto=format width="300" height="200""">
+    <p>Precio: $985.454.543</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Aston Martin DB12</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Aston_Martin_DB12_1X7A1921.jpg/960px-Aston_Martin_DB12_1X7A1921.jpg"width="300" height="200"">
+    <p>Precio: $344.764.234</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>McLaren 720S</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXInF0ATRsaAonqV9Ddb6gyRIvxvenj5jUTg&s">
+    <p>Precio: $987.456.876</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+
+<div class="producto">
+
+    <h3>Mercedes-AMG GT</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/49/2015-2017_Mercedes-AMG_GT_%28C_190%29_S_coupe_%282017-07-15%29_01.jpg"width="500" height="200"">
+    <p>Precio: $857.745.854</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Ford Mustang</h3>
+<img src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_7b7be715764f4381b9ee2cf228461f0c.webp"width="450" height="250"">
+    <p>Precio: $765.098.098</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Chevrolet Corvette</h3>
+<img src="data:image/jpeg;base64,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"width="450" height="250"">
+    <p>Precio: $345.645.565</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Nissan GT-R</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Nissan_GT-R_T-spec_MY2024%2C_front%2C_2023.jpg"width="400" height="250"">
+    <p>Precio: $235.234.677</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+
+
+  <div id="carrito">
+
+    <h2>Carrito de Compras</h2>
+
+    <ul id="listaCarrito"></ul>
+
+    <p><strong>Total:</strong> $<span id="total">0</span></p>
+
+  </div>
+
+
+  <script>
+
+    let carrito = [];
+
+    let total = 0;
+
+
+    function agregarAlCarrito(nombre, precio) {
+
+      carrito.push({ nombre, precio });
+
+      total += precio;
+
+      actualizarCarrito();
+
+    }
+
+
+    function actualizarCarrito() {
+
+      const lista = document.getElementById("listaCarrito");
+
+      const totalSpan = document.getElementById("total");
+
+
+      lista.innerHTML = "";
+
+      carrito.forEach((item) => {
+
+        const li = document.createElement("li");
+
+        li.textContent = `${item.nombre} - $${item.precio.toLocaleString()}`;
+
+        lista.appendChild(li);
+
+      });
+
+
+      totalSpan.textContent = total.toLocaleString();
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
