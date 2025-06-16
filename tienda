@@ -83,9 +83,9 @@
 
   <div class="producto">
 
-    <h3>Camiseta básica</h3>
+    <h3>Ferrari SF90 Stradale</h3>
 
-    <p>Precio: $35.000</p>
+    <p>Precio: $90.654.867</p>
 
     <button class="btn" onclick="agregarAlCarrito('Camiseta básica', 35000)">Agregar al carrito</button>
 
@@ -94,9 +94,74 @@
 
   <div class="producto">
 
-    <h3>Mochila</h3>
+    <h3>Lamborghini Aventador</h3>
 
-    <p>Precio: $75.000</p>
+    <p>Precio: $355.543.453</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+
+<div class="producto">
+
+    <h3>Porsche 911</h3>
+
+    <p>Precio: $985.454.543</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Aston Martin DB12</h3>
+
+    <p>Precio: $344.764.234</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>McLaren 720S</h3>
+
+    <p>Precio: $987.456.876</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+
+<div class="producto">
+
+    <h3>Mercedes-AMG GT</h3>
+
+    <p>Precio: $857.745.854</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Ford Mustang</h3>
+
+    <p>Precio: $765.098.098</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Chevrolet Corvette</h3>
+
+    <p>Precio: $345.645.565</p>
+
+    <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
+
+  </div>
+<div class="producto">
+
+    <h3>Nissan GT-R</h3>
+
+    <p>Precio: $235.234.677</p>
 
     <button class="btn" onclick="agregarAlCarrito('Mochila', 75000)">Agregar al carrito</button>
 
